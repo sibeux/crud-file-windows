@@ -5,15 +5,15 @@ import re
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "THE MAGICIAN -Majutsushi-"
+folder = "American Beauty"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 
-pattern = re.compile(r"^\d{2}\. ") # contoh: "01. "
+# pattern = re.compile(r"^\d{2}\. ") # contoh: "01. "
 # pattern = re.compile(r"^\d{2} - ") # contoh: "01 - "
 # pattern = re.compile(r"^\d{2}-") # contoh: "01-"
 # pattern = re.compile(r"^\d{2}_") # contoh: "01_"
 # pattern = re.compile(r"^\d{2}\.") # contoh: "01."
-# pattern = re.compile(r"^\d{2} ") # contoh: "01 "
+pattern = re.compile(r"^\d{2} ") # contoh: "01 "
 # pattern = re.compile(r"^\d{1}\. ") # contoh: "1. "
 # pattern = re.compile(r"^\d{1} - ") # contoh: "1 - "
 # pattern = re.compile(r"^\d{1}\.\d{2} ") # contoh: "1.01 "
@@ -27,7 +27,7 @@ pattern = re.compile(r"^\d{2}\. ") # contoh: "01. "
 # *** custom pattern *** #
 # kalau ada tanda kurung, harus di-escape dengan backslash = r"Taiji Koga \(Piano\) - "
 # pattern = re.compile(r"\[Artemis\] ")
-# pattern = re.compile(r"- Avenged Sevenfold - ")
+# pattern = re.compile(r"Mr.Kitty - ")
 
 # Loop melalui semua file di direktori
 for filename in os.listdir(directory_path):
