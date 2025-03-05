@@ -3,19 +3,21 @@ import re
 
 # Daftar nama file baru tanpa nomor urut dan waktu
 new_names = [
-    "BABYMETAL DEATH",
-    "Megitsune",
-    "Gimme Chocolate!!",
-    "Iine!",
-    "Akatsuki",
-    "Doki Doki ☆ Morning",
-    "Onedari Daisakusen",
-    "Song 4",
-    "Uki Uki ★ Midnight",
-    "Catch Me If You Can",
-    "Rondo of Nightmare",
-    "Headbangeeeeerrrrr!!!!!",
-    "Ijime, Dame, Zettai"
+    "youth complex",
+    "Alone Tokyo",
+    "Distortion!!",
+    "Himitsu Base",
+    "Guitars, loneliness, and a pale planet",
+    "I can't sing a love song.",
+    "that band",
+    "Karakara",
+    "a small sea",
+    "What's wrong?",
+    "I won't forget.",
+    "If I could become a constellation",
+    "flashbacker",
+    "Morning falls on you, the rolling rock"
+
 
 ]
 
@@ -23,7 +25,7 @@ new_names = [
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "BABYMETAL (2014) [FLAC]"
+folder = "Bocchi the Rock! Full Album"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 
 directory = directory1.replace("\\", "\\\\")
