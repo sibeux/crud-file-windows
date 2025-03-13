@@ -58,7 +58,7 @@ def get_flac_metadata(file_path):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "We Go"
+folder = "The Rose of Versailles-OST"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 
 # List semua file di direktori

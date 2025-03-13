@@ -3,22 +3,37 @@ import re
 
 # Daftar nama file baru tanpa nomor urut dan waktu
 new_names = [
-    "TOWA E MORE",
-    "7TH HEART",
-    "MIKANSEI MY HE LOW",
-    "ITSUKA KITTO",
-    "EBINA CHAN NO FREE AKITA IMOUTO DAN JOHN",
-    "DARA KE*SHI YU GYO DIARY!",
-    "GE SENKI U O ZU!",
-    "MUTEKINO SISTER FANTASY",
-    "TOWA E MORE (Instrumental)",
-    "7TH HEART (Instrumental)",
-    "MIKANSEI MY HE LOW (Instrumental)",
-    "ITSUKA KITTO (Instrumental)",
-    "EBINA CHAN NO FREE AKITA IMOUTO DAN JOHN (Instrumental)",
-    "DARA KE*SHI YU GYO DIARY! (Instrumental)",
-    "GE SENKI U O ZU! (Instrumental)",
-    "MUTEKINO SISTER FANTASY (Instrumental)"
+    "The Rose of Versailles ~Prologue~",
+    "Fanfare of the Royal Guard",
+    "Antoinette : Bride",
+    "Oscar & André",
+    "Audience with the Dauphine",
+    "Runaway Horse",
+    "Petition to the King",
+    "How Rude!",
+    "André's Oath",
+    "Oscar's Concerns",
+    "Antoinette : the Prodigal Queen",
+    "Reunion with Fersen",
+    "Antoinette & Fersen",
+    "Oscar's Caution",
+    "Lady Oscar",
+    "The Time of Intense Turmoil",
+    "Angry Citizens",
+    "Oscar's Determination",
+    "To the Guard",
+    "Louis XVI and the Truth",
+    "Paris : The City of Despair",
+    "Because I Love You",
+    "Your Heart is Free",
+    "Girodelle : Proof of Love",
+    "The Three Estates",
+    "Farewell to Antoinette",
+    "Become André Grandier wife",
+    "French Revolution",
+    "All About André",
+    "To the Bastille",
+    "Liberty, Equality, Fraternity"
 
 ]
 
@@ -26,7 +41,7 @@ new_names = [
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "Umaru-chan R-char-song-album"
+folder = "The Rose of Versailles-OST"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 
 directory = directory1.replace("\\", "\\\\")
