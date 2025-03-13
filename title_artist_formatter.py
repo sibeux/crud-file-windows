@@ -58,7 +58,8 @@ def get_flac_metadata(file_path):
 
 
 # Ganti dengan path direktori yang sesuai
-directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\Umaru-chan R-char-song-album\flac"
+folder = "We Go"
+directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 
 # List semua file di direktori
 files = os.listdir(directory_path)
