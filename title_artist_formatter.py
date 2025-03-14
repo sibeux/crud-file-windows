@@ -47,7 +47,8 @@ def get_flac_metadata(file_path):
         # bul = False
 
         if bul:
-            artist = artist.replace("をとは", "wotoha")
+            artist = artist.replace("土屋俊輔", "Shunsuke Tsuchiya")
+            artist = artist.replace("光田康典", "Yasunori Mitsuda")
 
         print(f"\"{file_name_without_ext} --- {artist if artist else ''}\",")
         # print(f"Title: {title[0] if title else 'Unknown'}")
@@ -60,6 +61,7 @@ def get_flac_metadata(file_path):
 # Ganti dengan path direktori yang sesuai
 folder = "Cinta Rasul Vol.3"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
+# directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\Dungeon Meshi OST\Disc 2"
 
 # List semua file di direktori
 files = os.listdir(directory_path)
