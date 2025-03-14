@@ -3,37 +3,31 @@ import re
 
 # Daftar nama file baru tanpa nomor urut dan waktu
 new_names = [
-    "The Rose of Versailles ~Prologue~",
-    "Fanfare of the Royal Guard",
-    "Antoinette : Bride",
-    "Oscar & André",
-    "Audience with the Dauphine",
-    "Runaway Horse",
-    "Petition to the King",
-    "How Rude!",
-    "André's Oath",
-    "Oscar's Concerns",
-    "Antoinette : the Prodigal Queen",
-    "Reunion with Fersen",
-    "Antoinette & Fersen",
-    "Oscar's Caution",
-    "Lady Oscar",
-    "The Time of Intense Turmoil",
-    "Angry Citizens",
-    "Oscar's Determination",
-    "To the Guard",
-    "Louis XVI and the Truth",
-    "Paris : The City of Despair",
-    "Because I Love You",
-    "Your Heart is Free",
-    "Girodelle : Proof of Love",
-    "The Three Estates",
-    "Farewell to Antoinette",
-    "Become André Grandier wife",
-    "French Revolution",
-    "All About André",
-    "To the Bastille",
-    "Liberty, Equality, Fraternity"
+    "The Rose of Versailles",
+    "Ma Vie en Rose",
+    "Enchanting Masquerade",
+    "Our King and Queen",
+    "Soul to Soul",
+    "Resonance of Love",
+    "Nowhere Heart",
+    "Believe in My Way",
+    "Never Surrender",
+    "Return to Nothing",
+    "Ravine",
+    "Child of Mars",
+    "Anger and Pain",
+    "Before Dawn Comes",
+    "Libération",
+    "The Rose of Versailles (Movie Edit)",
+    "Ma Vie en Rose (Movie Edit)",
+    "Enchanting Masquerade (Movie Edit)",
+    "Soul to Soul (Movie Edit)",
+    "Resonance of Love (Movie Edit)",
+    "Nowhere Heart (Movie Edit)",
+    "Never Surrender (Movie Edit)",
+    "Ravine (Movie Edit)",
+    "Child of Mars (Movie Edit)",
+    "Before Dawn Comes (Movie Edit)"
 
 ]
 
@@ -41,7 +35,7 @@ new_names = [
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "The Rose of Versailles-OST"
+folder = "Song Collection from The Rose of Versailles"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 
 directory = directory1.replace("\\", "\\\\")

@@ -58,7 +58,7 @@ def get_flac_metadata(file_path):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "Kyokai no Kanata char song vol 2"
+folder = "Cinta Rasul Vol.3"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 
 # List semua file di direktori
