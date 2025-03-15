@@ -3,44 +3,31 @@ import re
 
 # Daftar nama file baru tanpa nomor urut dan waktu
 new_names = [
-    "Former Glory (Katsute no Eiga)",
-    "Half-Belief, Half-Doubt (Hanshin Hangi)",
-    "A Genius Thought (Tensaiteki Kousatsu)",
-    "State of Emergency (Hijou Jitai)",
-    "Conspiracies, Lies and Rumors (Inbou to Uso to Uwasa)",
-    "Self-Centered (Hitoriyogari)",
-    "Black Magic (Kuro Majutsu)",
-    "Thistle and Marcille (Thistle to Marcille)",
-    "Mad Magician (Kyouran no Majutsushi)",
-    "In a Limited Amount of Time (Kagirareta Toki no Naka de)",
-    "Hostility (Tekii)",
-    "Confused Schemes (Konmeishita Sakubou)",
-    "Weird Creature (Kimyou na Ikimono)",
-    "The Truth That was Told (Tsugerareta Jitsujou)",
-    "Concerns (Kigakari)",
-    "Adventurers' Trust (Boukenshatachi no Shinrai)",
-    "Nightmares (Nightmare)",
-    "Weakness (Suijaku)",
-    "Surprise Attack (Kishuu)",
-    "A Dizzying Attack and Defense (Memagurushii Koubou)",
-    "Canary Squad (Canary-tai)",
-    "Monsters Dancing to Illusions (Gensou ni Odorasareshi Mamonotachi)",
-    "Scattered in a Desperate Situation (Zettai Zetsumei no Sanji)",
-    "The End of the Dungeon (Meikyuu no Gyoumatsu)",
-    "Cruel Bargaining (Kokuhaku na Kakehiki)",
-    "The Ultimate Deliciousness (Oishisa no Kiwami)",
-    "Slapstick Struggle (Dotabata Funtou)",
-    "Bright Dining Table (Akarui Shokutaku)",
-    "Eastern Covert Unit (Touhou Onmitsu Butai)",
-    "Chimera Falin (Chimera Falin)",
-    "Ruthless World (Reikoku na Sekai)",
-    "Gentle Conversation (Yasashiki Katarai)",
-    "Resonance of the Heart (Kokoro no Kyoumei)",
-    "Doubts of a Certain Past (Aru Kako no Ginen)",
-    "Peaceful Village of Melini (Heiwa na Mura Merini)",
-    "Upbringing (Oitachi)",
-    "A Futile Argument (Munashiki Iiarasoi)",
-    "Fleeting Life (Hakanai Seimei)",
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25"
 
 ]
 
@@ -48,7 +35,7 @@ new_names = [
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "Song Collection from The Rose of Versailles"
+folder = "NNT-OST-2"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory1 = r"C:\Users\Nasrul Wahabi\Downloads\Music\Dungeon Meshi OST\Disc 2"
 
