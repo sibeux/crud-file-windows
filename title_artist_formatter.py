@@ -59,7 +59,7 @@ def get_flac_metadata(file_path):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "Cinta Rasul Vol.3"
+folder = "GOLD RUSH"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\Dungeon Meshi OST\Disc 2"
 
