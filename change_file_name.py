@@ -5,7 +5,7 @@ import re
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "will be fine"
+folder = "Blue Lock VS. U-20 JAPAN"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 
 pattern = re.compile(r"^\d{2}\. ") # contoh: "01. "
