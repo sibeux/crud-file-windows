@@ -27,7 +27,18 @@ new_names = [
     "22",
     "23",
     "24",
-    "25"
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
 
 ]
 
@@ -35,7 +46,7 @@ new_names = [
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "NNT-OST-2"
+folder = "tasokare-hotel-ost"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory1 = r"C:\Users\Nasrul Wahabi\Downloads\Music\Dungeon Meshi OST\Disc 2"
 

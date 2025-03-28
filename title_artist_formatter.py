@@ -49,6 +49,11 @@ def get_flac_metadata(file_path):
         if bul:
             artist = artist.replace("土屋俊輔", "Shunsuke Tsuchiya")
             artist = artist.replace("光田康典", "Yasunori Mitsuda")
+            artist = artist.replace("辻 陽", "Yo Tsuji")
+            artist = artist.replace("りぶ", "RIB")
+            artist = artist.replace("吉澤嘉代子", "Yoshizawa Kayoko")
+            artist = artist.replace(
+                "金子このみ(CV: 東城日沙子)", "Kaneko Konomi (CV: Tojo Hisako)")
 
         print(f"\"{file_name_without_ext} --- {artist if artist else ''}\",")
         # print(f"Title: {title[0] if title else 'Unknown'}")
@@ -59,7 +64,7 @@ def get_flac_metadata(file_path):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "Anohana-secretbase-special-pkg"
+folder = "tasokare-hotel-ost"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\Dungeon Meshi OST\Disc 2"
 
