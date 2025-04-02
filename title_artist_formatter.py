@@ -52,6 +52,7 @@ def get_flac_metadata(file_path):
             artist = artist.replace("辻 陽", "Yo Tsuji")
             artist = artist.replace("りぶ", "RIB")
             artist = artist.replace("吉澤嘉代子", "Yoshizawa Kayoko")
+            artist = artist.replace("林ゆうき", "Yuki Hayashi")
             artist = artist.replace(
                 "金子このみ(CV: 東城日沙子)", "Kaneko Konomi (CV: Tojo Hisako)")
 
@@ -64,7 +65,7 @@ def get_flac_metadata(file_path):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "tasokare-hotel-ost"
+folder = "medalist-ost"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\Dungeon Meshi OST\Disc 2"
 
