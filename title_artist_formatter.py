@@ -11,7 +11,8 @@ def get_mp3_metadata(file_path):
         album = tags.get("TALB", None)
 
         # Ambil nama file tanpa ekstensi
-        file_name_without_ext = os.path.splitext(os.path.basename(file_path))[0]
+        file_name_without_ext = os.path.splitext(
+            os.path.basename(file_path))[0]
 
         artist = ', '.join(artist)
 
@@ -39,7 +40,8 @@ def get_flac_metadata(file_path):
         album = audio.get("album", None)
 
         # Ambil nama file tanpa ekstensi
-        file_name_without_ext = os.path.splitext(os.path.basename(file_path))[0]
+        file_name_without_ext = os.path.splitext(
+            os.path.basename(file_path))[0]
 
         artist = ', '.join(artist)
 
@@ -48,11 +50,20 @@ def get_flac_metadata(file_path):
 
         if bul:
             artist = artist.replace("土屋俊輔", "Shunsuke Tsuchiya")
+            artist = artist.replace(
+                "本場切絵(CV:白石晴香)", "Kirie Motoba (CV: Haruka Shiraishi)")
             artist = artist.replace("光田康典", "Yasunori Mitsuda")
             artist = artist.replace("辻 陽", "Yo Tsuji")
             artist = artist.replace("りぶ", "RIB")
             artist = artist.replace("吉澤嘉代子", "Yoshizawa Kayoko")
             artist = artist.replace("林ゆうき", "Yuki Hayashi")
+            artist = artist.replace("妹S", "ImoutoS")
+            artist = artist.replace(
+                "橘・シルフィンフォード(CV:古川由利奈)", "Sylphynford Tachibana (CV: Yurina Furukawa)")
+            artist = artist.replace(
+                "海老名菜々(CV:影山灯)", "Nana Ebina (CV: Akari Kageyama)")
+            artist = artist.replace(
+                "土間うまる(CV:田中あいみ)", "Umaru Doma (CV: Aimi Tanaka)")
             artist = artist.replace(
                 "金子このみ(CV: 東城日沙子)", "Kaneko Konomi (CV: Tojo Hisako)")
 
@@ -65,7 +76,7 @@ def get_flac_metadata(file_path):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "medalist-ost"
+folder = "UMARU THE BEST"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\Dungeon Meshi OST\Disc 2"
 
