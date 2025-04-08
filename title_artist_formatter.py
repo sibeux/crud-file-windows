@@ -78,7 +78,7 @@ def get_flac_metadata(file_path):
 # Ganti dengan path direktori yang sesuai
 folder = "UMARU THE BEST"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
-# directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\Dungeon Meshi OST\Disc 2"
+# directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\KNY-S3-OST\2"
 
 # List semua file di direktori
 files = os.listdir(directory_path)

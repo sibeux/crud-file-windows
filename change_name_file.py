@@ -20,6 +20,8 @@ new_names = [
     "15",
     "16",
     "17",
+    "18",
+    "19",
 
 ]
 
@@ -27,9 +29,9 @@ new_names = [
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "UMARU THE BEST"
+folder = "Dark Will Fall"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
-# directory1 = r"C:\Users\Nasrul Wahabi\Downloads\Music\Dungeon Meshi OST\Disc 2"
+# directory1 = r"C:\Users\Nasrul Wahabi\Downloads\Music\KNY-S3-OST\2"
 
 directory = directory1.replace("\\", "\\\\")
 

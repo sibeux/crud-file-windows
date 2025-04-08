@@ -4,23 +4,25 @@ def formatter_title_index(list):
 
 def main():
     formatter_title_index([
-        "Kakushinteki☆Metamarufo~Ze!",
-        "Sisters Wink",
-        "Fever Natsu Vacation!",
-        "Yuusha Umaru no Karei naru Seikatsu",
-        "Beautiful Days",
-        "sweet sweet everytime sweet",
-        "Soida Bane",
-        "My Precious",
-        "Toto Fantasia",
-        "T.S.F in Nippon!",
-        "Shupatto No.1",
-        "Dreamy Friends",
-        "Fuwari Wata-ame Oishiku nare",
-        "Happy Nightmare ~Imoutotachi no Kyouen~",
-        "X'mas Decoration",
-        "Hidamari Days",
-        "Paradise☆Syndro~me!"
+        "Zohakuten Appears",
+        "Haganezuka, Incredible Concentration",
+        "Tokito, In Fading Consciousness",
+        "Yuichiro's Rage ~ 'Mu' Stands for 'Infinity'",
+        "Mist Breathing Fifth Form: Sea of Clouds and Haze",
+        "Verbal Battle with Gyokko ~ Fierce Fight",
+        "Mist Breathing Seventh Form: Obscuring Clouds",
+        "The Family That Embraces Tokito ~ Fierce Battle with the Snake-dragon",
+        "Kanroji Swoops Down Upon a Moonlit Night",
+        "Because I'm Angry!",
+        "Kanroji vs. Zohakuten",
+        "A Place Where I Can Be Me",
+        "I'm Going to Protect You All",
+        "Dancing Flash",
+        "Daybreak and First Light",
+        "Song of Nezuko Kamado -Full Ver.-",
+        "Joyful Kibutsuji",
+        "Thank Goodness ~ Tamayo's Letter",
+        "A Thankful Farewell"
 
     ])
 
