@@ -4,25 +4,21 @@ def formatter_title_index(list):
 
 def main():
     formatter_title_index([
-        "Zohakuten Appears",
-        "Haganezuka, Incredible Concentration",
-        "Tokito, In Fading Consciousness",
-        "Yuichiro's Rage ~ 'Mu' Stands for 'Infinity'",
-        "Mist Breathing Fifth Form: Sea of Clouds and Haze",
-        "Verbal Battle with Gyokko ~ Fierce Fight",
-        "Mist Breathing Seventh Form: Obscuring Clouds",
-        "The Family That Embraces Tokito ~ Fierce Battle with the Snake-dragon",
-        "Kanroji Swoops Down Upon a Moonlit Night",
-        "Because I'm Angry!",
-        "Kanroji vs. Zohakuten",
-        "A Place Where I Can Be Me",
-        "I'm Going to Protect You All",
-        "Dancing Flash",
-        "Daybreak and First Light",
-        "Song of Nezuko Kamado -Full Ver.-",
-        "Joyful Kibutsuji",
-        "Thank Goodness ~ Tamayo's Letter",
-        "A Thankful Farewell"
+        "Metro Boomin, John Legend",
+        "Metro Boomin, Future, Chris Brown",
+        "Metro Boomin, Future, Don Toliver",
+        "Metro Boomin, Travis Scott",
+        "Metro Boomin, 21 Savage, Young Nudy",
+        "Metro Boomin, Travis Scott, Young Thug",
+        "Metro Boomin, Don Toliver",
+        "Metro Boomin, Young Thug",
+        "Metro Boomin, Future, Don Toliver",
+        "Metro Boomin, The Weeknd, 21 Savage",
+        "Metro Boomin, Travis Scott, 21 Savage",
+        "Metro Boomin, 21 Savage, Mustafa",
+        "Metro Boomin, Travis Scott, Future",
+        "Metro Boomin, A$AP Rocky, Takeoff",
+        "Metro Boomin, Gunna"
 
     ])
 
