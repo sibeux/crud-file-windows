@@ -58,6 +58,8 @@ def get_flac_metadata(file_path):
             artist = artist.replace("吉澤嘉代子", "Yoshizawa Kayoko")
             artist = artist.replace("林ゆうき", "Yuki Hayashi")
             artist = artist.replace("妹S", "ImoutoS")
+            artist = artist.replace("堤 博明", "Hiroaki Tsutsumi")
+            artist = artist.replace("加藤達也", "Tatsuya Kato")
             artist = artist.replace(
                 "橘・シルフィンフォード(CV:古川由利奈)", "Sylphynford Tachibana (CV: Yurina Furukawa)")
             artist = artist.replace(
@@ -76,7 +78,7 @@ def get_flac_metadata(file_path):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "UMARU THE BEST"
+folder = "dr stone ost 5"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\KNY-S3-OST\2"
 

@@ -5,14 +5,14 @@ import re
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "Tengoku-ost-vol.2"
+folder = "ReawakeR"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 
-pattern = re.compile(r"^\d{2}\. ") # contoh: "01. "
+# pattern = re.compile(r"^\d{2}\. ") # contoh: "01. "
 # pattern = re.compile(r"^\d{2} - ") # contoh: "01 - "
 # pattern = re.compile(r"^\d{2}-") # contoh: "01-"
 # pattern = re.compile(r"^\d{2}_") # contoh: "01_"
-# pattern = re.compile(r"^\d{2}\.") # contoh: "01."
+pattern = re.compile(r"^\d{2}\.") # contoh: "01."
 # pattern = re.compile(r"^\d{2} ") # contoh: "01 "
 # pattern = re.compile(r"^\d{1}\. ") # contoh: "1. "
 # pattern = re.compile(r"^\d{1} - ") # contoh: "1 - "
