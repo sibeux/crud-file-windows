@@ -3,10 +3,24 @@ import re
 
 # Daftar nama file baru tanpa nomor urut dan waktu
 new_names = [
-    "Umarun Taisou",
-    "Kawaranai Takaramono",
-    "Umarun Taisou (Instrumental)",
-    "Kawaranai Takaramono (Instrumental)",
+    "Aoi Shiori",
+    "I Left You",
+    "Still...",
+    "Dear Love",
+    "Secret Base~Kimigakuretamono - 10 Years After Version",
+    "Circle Game",
+    "Harmonia",
+    "Akogareno Butoukai",
+    "Hikarino Naiheya",
+    "Moeagare",
+    "Word Word Word",
+    "Watashino Koe",
+    "Tamagono Nakaniha Nanigaaru",
+    "Kokoroga Sakebitdasu Anatano Namae Yobuyo",
+    "Over the Rainbow",
+    "Ima, Hanashitai Dareka ga Iru",
+    "New Flower",
+    "H.A.N.A.B.I -Kimiga Ita Natsu"
 
 ]
 
@@ -14,7 +28,7 @@ new_names = [
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "Umarun Taisou"
+folder = "Memories"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory1 = r"C:\Users\Nasrul Wahabi\Downloads\Music\orb-ost\2"
 

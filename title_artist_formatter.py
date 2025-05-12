@@ -85,7 +85,7 @@ def get_flac_metadata(file_path, type):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "FAN LETTER"
+folder = "Naruto IN ROCK"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\KNY-S3-OST\2"
 
