@@ -1,6 +1,7 @@
 import os
 from mutagen.id3 import ID3, TPE1, TIT2, TALB  # type: ignore
 from mutagen.flac import FLAC
+from mutagen.mp4 import MP4
 
 
 def get_mp3_metadata(file_path):
@@ -32,12 +33,18 @@ def get_mp3_metadata(file_path):
         print(f"Error reading metadata for {file_path}: {e}")
 
 
-def get_flac_metadata(file_path):
+def get_flac_metadata(file_path, type):
     try:
-        audio = FLAC(file_path)
-        artist = audio.get("artist", None)
-        title = audio.get("title", None)
-        album = audio.get("album", None)
+        if type == "flac":
+            audio = FLAC(file_path)
+            artist = audio.get("artist", None)
+            # title = audio.get("title", None)
+            # album = audio.get("album", None)
+        elif type == "alac":
+            audio = MP4(file_path)
+            artist = audio.get("\xa9ART", None)
+            # title = audio.get("\xa9nam", None)
+            # album = audio.get("\xa9alb", None)
 
         # Ambil nama file tanpa ekstensi
         file_name_without_ext = os.path.splitext(
@@ -78,7 +85,7 @@ def get_flac_metadata(file_path):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "dr stone ost 5"
+folder = "FAN LETTER"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\KNY-S3-OST\2"
 
@@ -94,4 +101,6 @@ for file_name in files:
     if file_name.lower().endswith(".mp3"):
         get_mp3_metadata(file_path)
     elif file_name.lower().endswith(".flac"):
-        get_flac_metadata(file_path)
+        get_flac_metadata(file_path, "flac")
+    elif file_name.lower().endswith(".m4a"):
+        get_flac_metadata(file_path, "alac")
