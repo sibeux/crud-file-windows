@@ -57,8 +57,6 @@ def get_flac_metadata(file_path, type):
 
         if bul:
             artist = artist.replace("土屋俊輔", "Shunsuke Tsuchiya")
-            artist = artist.replace(
-                "本場切絵(CV:白石晴香)", "Kirie Motoba (CV: Haruka Shiraishi)")
             artist = artist.replace("光田康典", "Yasunori Mitsuda")
             artist = artist.replace("辻 陽", "Yo Tsuji")
             artist = artist.replace("りぶ", "RIB")
@@ -67,6 +65,12 @@ def get_flac_metadata(file_path, type):
             artist = artist.replace("妹S", "ImoutoS")
             artist = artist.replace("堤 博明", "Hiroaki Tsutsumi")
             artist = artist.replace("加藤達也", "Tatsuya Kato")
+            artist = artist.replace("竹中だいち", "Daichi Takenaka")
+            artist = artist.replace("内田ましろ", "Mashiro Uchida")
+            artist = artist.replace("アオイエマ。", "Aoiema.")
+            artist = artist.replace("大原ゆい子", "Yuiko Ōhara")
+            artist = artist.replace(
+                "本場切絵(CV:白石晴香)", "Kirie Motoba (CV: Haruka Shiraishi)")
             artist = artist.replace(
                 "橘・シルフィンフォード(CV:古川由利奈)", "Sylphynford Tachibana (CV: Yurina Furukawa)")
             artist = artist.replace(
@@ -85,7 +89,7 @@ def get_flac_metadata(file_path, type):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "Naruto IN ROCK"
+folder = "apothecary-diaries-s1-ost-d3"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\KNY-S3-OST\2"
 

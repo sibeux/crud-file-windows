@@ -5,7 +5,7 @@ import re
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "DANCE in the CHAOS"
+folder = "Lazarus-Kamasi Washington"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\sakurama-hibiki\Inuyashiki ost Vol.2\flac"
 
@@ -70,7 +70,7 @@ for file_name in files:
         new_file_name = new_file_name.replace("*", "⁕")
     if symbol_pattern.search(file_name):
         files_with_symbols.append(file_name)
-    
+
     # Rename file jika ada perubahan
     if new_file_name != file_name:
         os.rename(
