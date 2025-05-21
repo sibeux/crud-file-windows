@@ -3,33 +3,33 @@ import re
 
 # Daftar nama file baru tanpa nomor urut dan waktu
 new_names = [
-    "01",
-    "02",
-    "03",
-    "04",
-    "05",
-    "06",
-    "07",
-    "08",
-    "09",
-    "10",
-    "11",
-    "12",
-    "13",
-    "14",
-    "15",
-    "16",
-    "17",
-    "18",
-    "19",
+    "Saishusenkoku",
+    "Rat king",
+    "Under control",
+    "Keitairenwa",
+    "Bunny boiler",
+    "Ongaku wo urandeiru",
+    "Nisengohyakumanbunnoichi",
+    "[Passphrase]",
+    "Kamisama no iutori",
+    "Lielac",
+    "Tohikou",
+    "To the one that dark sleep calls",
+    "Shitsui no etude",
+    "Issyou fukou de kamawanai",
+    "Wasureteiiyo",
+    "[Submerged city]",
+    "Hitomodoki",
+
 ]
 
 # Direktori tempat file berada
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "DorohedoroOST"
+folder = "music"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
+directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\2"
 # directory1 = r"C:\Users\Nasrul Wahabi\Downloads\Music\KNY Orchestra Concert S3\2"
 
 directory = directory1.replace("\\", "\\\\")
