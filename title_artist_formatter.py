@@ -64,11 +64,26 @@ def get_flac_metadata(file_path, type):
             artist = artist.replace("林ゆうき", "Yuki Hayashi")
             artist = artist.replace("妹S", "ImoutoS")
             artist = artist.replace("堤 博明", "Hiroaki Tsutsumi")
+            artist = artist.replace("神前 暁", "Satoru Kosaki")
+            artist = artist.replace("桶狭間ありさ", "Alisa Okehazama")
             artist = artist.replace("加藤達也", "Tatsuya Kato")
             artist = artist.replace("竹中だいち", "Daichi Takenaka")
             artist = artist.replace("内田ましろ", "Mashiro Uchida")
             artist = artist.replace("アオイエマ。", "Aoiema.")
             artist = artist.replace("大原ゆい子", "Yuiko Ōhara")
+            artist = artist.replace("ケビン・ペンキン", "Kevin Penkin")
+            artist = artist.replace("橋本由香利", "Yukari Hashimoto")
+            artist = artist.replace("ヴォイド教信徒たち", "Void Cult Followers")
+            artist = artist.replace("照井順政", "Yoshimasa Terui")
+            artist = artist.replace("立山秋航", "Akiyuki Tateyama")
+            artist = artist.replace("葛西竜之介", "Ryuunosuke Kasai")
+            artist = artist.replace("純情のアフィリア", "Junjo no Afilia")
+            artist = artist.replace("アフィリア・サーガ", "Afilia Saga")
+            artist = artist.replace("イースト", "East")
+            artist = artist.replace(
+                "メメルン(CV.鈴木みのり)", "Memmeln (CV: Minori Suzuki)")
+            artist = artist.replace(
+                "超実在イグジスト(CV.宮野真守)", "Choujitsuzai Exister (CV: Mamoru Miyano)")
             artist = artist.replace(
                 "本場切絵(CV:白石晴香)", "Kirie Motoba (CV: Haruka Shiraishi)")
             artist = artist.replace(
@@ -89,9 +104,10 @@ def get_flac_metadata(file_path, type):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "apothecary-diaries-s1-ost-d3"
+folder = "sxf-s2-ost"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
-# directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\KNY-S3-OST\2"
+# directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\2"
+# directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\Junjo Guidestones\3"
 
 # List semua file di direktori
 files = os.listdir(directory_path)
