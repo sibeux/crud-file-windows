@@ -1,11 +1,12 @@
 import os
 import re
+import invalid_char as inv_char
 
 # Ganti dengan path direktori yang sesuai
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "sxf-s2-ost"
+folder = "BRAND NEW WORLD"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\2"
 # directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\sakurama-hibiki\Inuyashiki ost Vol.2\flac"
@@ -27,48 +28,10 @@ symbol_pattern = re.compile(r'[^a-zA-Z0-9.\-_ ]')
 # Cek setiap file dan ganti karakter petik dengan backtick
 for file_name in files:
     new_file_name = file_name
-    if "'" in file_name:
-        files_with_single_quote.append(file_name)
-        new_file_name = new_file_name.replace("'", "’")
-    if '"' in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace('"', "”")
-    if "<" in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace("<", "‹")
-    if ">" in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace(">", "›")
-    if ":" in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace(":", "⁚")
-    if "꞉" in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace("꞉", "⁚")
-    if "∶" in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace("∶", "⁚")
-    if "/" in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace("/", "⁄")
-    if "\\" in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace("\\", "⁄")
-    if "|" in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace("|", "―")
-    if "?" in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace("?", "⁇")
-    if "？" in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace("？", "⁇")
-    if ";" in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace(";", "⁏")
-    if "*" in file_name:
-        files_with_double_quote.append(file_name)
-        new_file_name = new_file_name.replace("*", "⁕")
+    for invalid_char, replacement in inv_char.replacement.items():
+        new_file_name = new_file_name.replace(invalid_char, replacement)
+        if invalid_char in file_name:
+            files_with_single_quote.append(file_name)
     if symbol_pattern.search(file_name):
         files_with_symbols.append(file_name)
 

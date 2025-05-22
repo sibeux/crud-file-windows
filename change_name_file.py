@@ -1,25 +1,13 @@
 import os
 import re
+import invalid_char as inv_char
 
 # Daftar nama file baru tanpa nomor urut dan waktu
 new_names = [
-    "Saishusenkoku",
-    "Rat king",
-    "Under control",
-    "Keitairenwa",
-    "Bunny boiler",
-    "Ongaku wo urandeiru",
-    "Nisengohyakumanbunnoichi",
-    "[Passphrase]",
-    "Kamisama no iutori",
-    "Lielac",
-    "Tohikou",
-    "To the one that dark sleep calls",
-    "Shitsui no etude",
-    "Issyou fukou de kamawanai",
-    "Wasureteiiyo",
-    "[Submerged city]",
-    "Hitomodoki",
+    "secret base ~The Gift You Gave To Me~ (10 years after Ver.)",
+    "secret base ~The Gift You Gave To Me~ (Memento mori Ver.)",
+    "secret base ~The Gift You Gave To Me~ (10 years after Ver.) Off Vocal Version",
+    "secret base ~The Gift You Gave To Me~ (Memento mori Ver.) Off Vocal Version",
 
 ]
 
@@ -27,9 +15,9 @@ new_names = [
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "music"
+folder = "Anohana ED Theme"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
-directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\2"
+# directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\2"
 # directory1 = r"C:\Users\Nasrul Wahabi\Downloads\Music\KNY Orchestra Concert S3\2"
 
 directory = directory1.replace("\\", "\\\\")
@@ -43,32 +31,12 @@ def extract_number(filename):
 
 # Fungsi untuk membersihkan nama file dari karakter yang tidak diperbolehkan dengan pengganti karakter yang mirip
 
-
 def sanitize_filename(filename):
-    # Peta pengganti karakter
-    replacements = {
-        "'": '’',
-        '"': '”',
-        '<': '‹',
-        '>': '›',
-        ':': '⁚',
-        '꞉': '⁚',
-        '∶': '⁚',
-        '/': '⁄',
-        '\\': '⁄',
-        '|': '―',
-        '?': '⁇',
-        '？': '⁇',
-        '*': '⁕',
-        ';': '⁏',
-    }
-
     # Ganti setiap karakter yang tidak diperbolehkan dengan pengganti yang sesuai
-    for invalid_char, replacement in replacements.items():
+    for invalid_char, replacement in inv_char.replacement.items():
         filename = filename.replace(invalid_char, replacement)
 
     return filename
-
 
 # Mendapatkan daftar semua file di direktori yang ditentukan
 files = os.listdir(directory)

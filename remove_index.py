@@ -1,11 +1,12 @@
 import os
 import re
+import invalid_char as inv_char
 
 # Ganti dengan path direktori yang sesuai
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "sxf-s2-ost"
+folder = "Crazy Rainbow"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
 # directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\2"
 # directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\sakurama-hibiki\Inuyashiki ost Vol.2\flac"
@@ -15,10 +16,10 @@ pattern = re.compile(r"^\d{2}\. ")  # contoh: "01. "
 # pattern = re.compile(r"^\d{2}-") # contoh: "01-"
 # pattern = re.compile(r"^\d{2}_") # contoh: "01_"
 # pattern = re.compile(r"^\d{2}\.") # contoh: "01."
-# pattern = re.compile(r"^\d{2} ") # contoh: "01 "
+# pattern = re.compile(r"^\d{2} ")  # contoh: "01 "
 # pattern = re.compile(r"^\d{1}\. ") # contoh: "1. "
 # pattern = re.compile(r"^\d{1} - ") # contoh: "1 - "
-# pattern = re.compile(r"^\d{1}\.\d{2} ") # contoh: "1.01 "
+# pattern = re.compile(r"^\d{1}\.\d{2} ")  # contoh: "1.01 "
 # pattern = re.compile(r"^\d{1}\.\d{2}. ") # contoh: "1.01. "
 # pattern = re.compile(r"^\d{1}\-\d{2} – ") # contoh: "1-16 – "
 # pattern = re.compile(r"^\d{1}\-\d{2} ") # contoh: "1-16 "
@@ -30,6 +31,14 @@ pattern = re.compile(r"^\d{2}\. ")  # contoh: "01. "
 # kalau ada tanda kurung, harus di-escape dengan backslash = r"Taiji Koga \(Piano\) - "
 # pattern = re.compile(r"\[Artemis\] ")
 # pattern = re.compile(r"Mr.Kitty - ")
+
+
+def sanitize_filename(filename):
+    # Ganti setiap karakter yang tidak diperbolehkan dengan pengganti yang sesuai
+    for invalid_char, replacement in inv_char.replacement.items():
+        filename = filename.replace(invalid_char, replacement)
+
+    return filename
 
 # Loop melalui semua file di direktori
 for filename in os.listdir(directory_path):
@@ -51,4 +60,5 @@ for filename in os.listdir(directory_path):
 
         # Rename file
         os.rename(old_file_path, new_file_path)
+        new_filename = sanitize_filename(new_filename)
         print(f"File {filename}-----→{new_filename}")
