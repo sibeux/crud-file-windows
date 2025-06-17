@@ -104,10 +104,9 @@ def get_flac_metadata(file_path, type):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "sxf-s2-ost"
-directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
-# directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\2"
-# directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\Junjo Guidestones\3"
+folder = "Sukimakaze"
+directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
+directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\Radiance Aflame\3"
 
 # List semua file di direktori
 files = os.listdir(directory_path)

@@ -6,10 +6,9 @@ import invalid_char as inv_char
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "Crazy Rainbow"
-directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
-# directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\2"
-# directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\sakurama-hibiki\Inuyashiki ost Vol.2\flac"
+folder = "ReKessoku Band"
+directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
+# directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\Radiance Aflame\3"
 
 pattern = re.compile(r"^\d{2}\. ")  # contoh: "01. "
 # pattern = re.compile(r"^\d{2} - ") # contoh: "01 - "
@@ -39,6 +38,7 @@ def sanitize_filename(filename):
         filename = filename.replace(invalid_char, replacement)
 
     return filename
+
 
 # Loop melalui semua file di direktori
 for filename in os.listdir(directory_path):

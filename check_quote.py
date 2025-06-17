@@ -6,10 +6,9 @@ import invalid_char as inv_char
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "BRAND NEW WORLD"
-directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\flac"
-# directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\{folder}\2"
-# directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\sakurama-hibiki\Inuyashiki ost Vol.2\flac"
+folder = "Unnamed Memory OST"
+directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
+# directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\Radiance Aflame\3"
 
 # List semua file di direktori
 files = os.listdir(directory_path)
