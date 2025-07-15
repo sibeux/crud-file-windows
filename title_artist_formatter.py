@@ -79,7 +79,23 @@ def get_flac_metadata(file_path, type):
             artist = artist.replace("葛西竜之介", "Ryuunosuke Kasai")
             artist = artist.replace("純情のアフィリア", "Junjo no Afilia")
             artist = artist.replace("アフィリア・サーガ", "Afilia Saga")
+            artist = artist.replace("小畑貴裕", "Takahiro Obata")
+            artist = artist.replace("ユリカリパブリック", "Eureka Republic")
+            artist = artist.replace("高橋諒", "Ryo Takahashi")
             artist = artist.replace("イースト", "East")
+            artist = artist.replace("狐野智之", "Kono Tomoyuki")
+            artist = artist.replace("川﨑龍", "Ryu Kawasaki")
+            artist = artist.replace("斎木 達彦", "Saiki Tatsuhiko")
+            artist = artist.replace("佐久間 奏", "Sakuma Kanade")
+            artist = artist.replace("田中津久美", "Tsugumi Tanaka")
+            artist = artist.replace("藤澤慶昌", "Fujisawa Yoshiaki")
+            artist = artist.replace("田渕夏海", "Natsumi Tabuchi")
+            artist = artist.replace("三宅りむ", "Rimu Miyake")
+            artist = artist.replace("朴璐美", "Park Romi")
+            artist = artist.replace("榊原良子", "Sakakibara Yoshiko")
+            artist = artist.replace("りりさ, 音羽, ティナ & 環", "Lilisa, Otoha, Tina & Tamaki")
+            artist = artist.replace("りりさ, 音羽 & レッドファミリア", "Lilisa, Otoha & Red Familia")
+            artist = artist.replace("ロックレディ", "Rock Lady")
             artist = artist.replace(
                 "メメルン(CV.鈴木みのり)", "Memmeln (CV: Minori Suzuki)")
             artist = artist.replace(
@@ -104,9 +120,9 @@ def get_flac_metadata(file_path, type):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "Sukimakaze"
+folder = "Kusuriya-s2-ost-v2"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
-directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\Radiance Aflame\3"
+# directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
 
 # List semua file di direktori
 files = os.listdir(directory_path)
