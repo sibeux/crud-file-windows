@@ -5,14 +5,30 @@ def formatter_title_index(list):
 
 def main():
     formatter_title_index([
-     "Undine",
-"Barcarole",
-"Euforia",
-"Coccolo",
-"Spirale",
-"Lumis Eterne",
-"Felicita",
-"Espero"
+     "Will He Shoemaker?",
+"Shrine and Dash",
+"Miguel's Got an Axe to Find",
+"The Strum of Destiny",
+"It's All Relative",
+"Crossing the Marigold Bridge",
+"Dept. of Family Reunions",
+"The Skeleton Key to Escape",
+"The Newbie Skeleton Walk",
+"Adiós Chicharrón",
+"Plaza de la Cruz",
+"Family Doubtings",
+"Taking Sides",
+"Fiesta Espectacular",
+"Fiesta con de la Cruz",
+"I Have a Great-Great-Grandson",
+"A Blessing and a Fessing",
+"Somos Familia",
+"Reunión Familiar de Rivera",
+"A Family Dysfunction",
+"Grabbing a Photo Opportunity",
+"For Whom the Bell Tolls",
+"One Year Later",
+"Coco - Día de los Muertos Suite"
     ])
 
 

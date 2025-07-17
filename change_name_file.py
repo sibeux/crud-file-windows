@@ -12,16 +12,32 @@ new_names = [
 "06",
 "07",
 "08",
+"09",
+"10",
+"11",
+"12",
+"13",
+"14",
+"15",
+"16",
+"17",
+"18",
+"19",
+"20",
+"21",
+"22",
+"23",
+"24",
 ]
 
 # Direktori tempat file berada
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "ARIA The BEST Vol.3"
+folder = "Coco_Ost"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
-# directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
-# directory1 = r"C:\Users\Nasrul Wahabi\Downloads\Music\KNY Orchestra Concert S3\2"
+directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
+# directory1 = r"C:\Users\Nasrul Wahabi\Downloads\Video\1. Welcome To The Course!"
 
 directory = directory1.replace("\\", "\\\\")
 

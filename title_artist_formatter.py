@@ -110,6 +110,20 @@ def get_flac_metadata(file_path, type):
                 "土間うまる(CV:田中あいみ)", "Umaru Doma (CV: Aimi Tanaka)")
             artist = artist.replace(
                 "金子このみ(CV: 東城日沙子)", "Kaneko Konomi (CV: Tojo Hisako)")
+            artist = artist.replace("葉月 絵理乃", "Hazuki Erino")
+            artist = artist.replace("安野希世乃", "Yasuno Kiyono")
+            artist = artist.replace("牧野由依", "Makino Yui")
+            artist = artist.replace("新居昭乃", "Arai Akino")
+            artist = artist.replace("西沢幸奏", "Nishizawa Shiena")
+            artist = artist.replace("河井英里", "Kawai Eri")
+            artist = artist.replace("斎藤 千和", "Saito Chiwa")
+            artist = artist.replace("広橋 涼", "Hirohashi Ryo")
+            artist = artist.replace("アリス(CV:広橋涼)", "Alice (CV: Hirohashi Ryo)")
+            artist = artist.replace("ウンディーネ娘。", "Undine Musume.")
+            artist = artist.replace("藤木直人", "Fujiki Naohito")
+            artist = artist.replace("本杰明布拉特", "Benjamin Bratt")
+            artist = artist.replace("盖尔·加西亚·伯纳尔", "Gael García Bernal")
+            artist = artist.replace("迈克尔・吉亚奇诺", "Michael Giacchino")
 
         print(f"\"{file_name_without_ext} --- {artist if artist else ''}\",")
         # print(f"Title: {title[0] if title else 'Unknown'}")
@@ -120,9 +134,9 @@ def get_flac_metadata(file_path, type):
 
 
 # Ganti dengan path direktori yang sesuai
-folder = "Kusuriya-s2-ost-v2"
+folder = "Coco_Ost"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
-# directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
+directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
 
 # List semua file di direktori
 files = os.listdir(directory_path)

@@ -5,7 +5,7 @@ def generate_index(n):
 
 
 def main():
-    generate_index(8)
+    generate_index(24)
 
 
 if __name__ == "__main__":
