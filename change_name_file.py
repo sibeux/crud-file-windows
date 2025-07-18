@@ -8,48 +8,24 @@ new_names = [
 "02",
 "03",
 "04",
-"05",
-"06",
-"07",
-"08",
-"09",
-"10",
-"11",
-"12",
-"13",
-"14",
-"15",
-"16",
-"17",
-"18",
-"19",
-"20",
-"21",
-"22",
-"23",
-"24",
 ]
 
 # Direktori tempat file berada
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "Coco_Ost"
+folder = "BLADE"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
-directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
+# directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
 # directory1 = r"C:\Users\Nasrul Wahabi\Downloads\Video\1. Welcome To The Course!"
 
 directory = directory1.replace("\\", "\\\\")
 
 # Fungsi untuk mengekstrak nomor urut dari nama file
-
-
-def extract_number(filename):
-    match = re.match(r'(\d+)', filename)
-    return int(match.group(1)) if match else float('inf')
+def natural_sort_key(s):
+    return [int(text) if text.isdigit() else text.lower() for text in re.split(r'(\d+)', s)]
 
 # Fungsi untuk membersihkan nama file dari karakter yang tidak diperbolehkan dengan pengganti karakter yang mirip
-
 def sanitize_filename(filename):
     # Ganti setiap karakter yang tidak diperbolehkan dengan pengganti yang sesuai
     for invalid_char, replacement in inv_char.replacement.items():
@@ -61,7 +37,7 @@ def sanitize_filename(filename):
 files = os.listdir(directory)
 
 # Mengurutkan file berdasarkan nomor urut di nama file
-sorted_files = sorted(files, key=extract_number)
+sorted_files = sorted(files, key=natural_sort_key)
 
 # Pastikan jumlah file sesuai dengan jumlah nama baru
 if len(sorted_files) != len(new_names):
