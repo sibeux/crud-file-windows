@@ -5,10 +5,26 @@ def formatter_title_index(list):
 
 def main():
     formatter_title_index([
-     "BLADE",
-"GET BACK",
-"BLADE -Fate version-(TV size)",
-"BLADE -Bond version-(TV size)"
+     "Shakkotuenyou",
+"Kyoui No Saiseisokudo Onika Nezuko",
+"Koyama No Kousagi",
+"Omoidashita Nezuko",
+"Nakijyakuru Daki",
+"Gyuutaraou No Shutsugen",
+"Gyuutarou Sentou Kaishi",
+"Hinatsuru No Kunai Kishikaisei No Itte",
+"Uzui No Hakamairi",
+"Daki Gekiha",
+"Hinshi No Kisatsutai",
+"Toubatumade Ato Ippo Hekirekiissen Shinsoku",
+"Gyuutaou No Moukou Fumen No Kansei",
+"Kecchaku Daki Gyuutarou Sen",
+"Yukakuhoukai",
+"Tatakai No Shuuen Nezuko No Honoo",
+"Uzui No Gedoku",
+"Nando Umarekawattemo",
+"Daidanen",
+"Zankyosanka -long intro version-"
     ])
 
 

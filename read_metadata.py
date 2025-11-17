@@ -40,7 +40,10 @@ def get_flac_metadata(file_path):
 
 
 # Ganti dengan path direktori yang sesuai
-directory_path = r"C:\Users\Nasrul Wahabi\Downloads\Music\Your Starry Eyes\flac"
+folder = "86 EIGHTY-SIX Original Soundtrack"
+directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
+directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\1"
+directory_path = directory1.replace("\\", "\\\\")
 
 # List semua file di direktori
 files = os.listdir(directory_path)
@@ -51,7 +54,7 @@ files = [f for f in files if os.path.isfile(os.path.join(directory_path, f))]
 for file_name in files:
     file_path = os.path.join(directory_path, file_name)
 
-    if file_name.lower().endswith(".m4a"):
+    if file_name.lower().endswith(".m4a") or file_name.lower().endswith(".mp3"):
         get_mp3_metadata(file_path)
     elif file_name.lower().endswith(".flac"):
         get_flac_metadata(file_path)

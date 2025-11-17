@@ -3,35 +3,10 @@ from mutagen.id3 import ID3, TPE1, TIT2, TALB  # type: ignore
 from mutagen.flac import FLAC
 from mutagen.mp4 import MP4
 
-
-def get_mp3_metadata(file_path):
-    try:
-        tags = ID3(file_path)
-        artist = tags.get("TPE1", None)
-        title = tags.get("TIT2", None)
-        album = tags.get("TALB", None)
-
-        # Ambil nama file tanpa ekstensi
-        file_name_without_ext = os.path.splitext(
-            os.path.basename(file_path))[0]
-
-        artist = ', '.join(artist)
-
-        bul = True
-        # bul = False
-
-        if bul:
-            artist = artist.replace("鳴潮", "Wuthering Waves")
-
-        print(f"\"{file_name_without_ext} --- {artist if artist else ''}\",")
-
-        # print(f"File: {file_name_without_ext}")
-        # print(f"Title: {title.text[0] if title else 'Unknown'}")
-        # print(f"Author: {author.text[0] if author else 'Unknown'}")
-        # print(f"Album: {album.text[0] if album else 'Unknown'}")
-    except Exception as e:
-        print(f"Error reading metadata for {file_path}: {e}")
-
+# Ganti dengan path direktori yang sesuai
+folder = "40-TV Anime “Rent-A-Girlfriend 2nd Season” Original Soundtrack"
+directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
+# directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
 
 def get_flac_metadata(file_path, type):
     try:
@@ -57,6 +32,7 @@ def get_flac_metadata(file_path, type):
 
         if bul:
             artist = artist.replace("土屋俊輔", "Shunsuke Tsuchiya")
+            artist = artist.replace("ヒャダイン", "Hyadain")
             artist = artist.replace("光田康典", "Yasunori Mitsuda")
             artist = artist.replace("辻 陽", "Yo Tsuji")
             artist = artist.replace("りぶ", "RIB")
@@ -96,6 +72,7 @@ def get_flac_metadata(file_path, type):
             artist = artist.replace("りりさ, 音羽, ティナ & 環", "Lilisa, Otoha, Tina & Tamaki")
             artist = artist.replace("りりさ, 音羽 & レッドファミリア", "Lilisa, Otoha & Red Familia")
             artist = artist.replace("ロックレディ", "Rock Lady")
+            artist = artist.replace("アクア (CV: 雨宮天) / めぐみん (CV: 高橋李依) / ダクネス (CV: 茅野愛衣)", "Aqua (CV: Sora Amamiya) / Megumin (CV: Rie Takahashi) / Darkness (CV: Ai Kayano)")
             artist = artist.replace(
                 "メメルン(CV.鈴木みのり)", "Memmeln (CV: Minori Suzuki)")
             artist = artist.replace(
@@ -109,8 +86,11 @@ def get_flac_metadata(file_path, type):
             artist = artist.replace(
                 "土間うまる(CV:田中あいみ)", "Umaru Doma (CV: Aimi Tanaka)")
             artist = artist.replace(
+                "土間うまる", "Umaru Doma")
+            artist = artist.replace(
                 "金子このみ(CV: 東城日沙子)", "Kaneko Konomi (CV: Tojo Hisako)")
             artist = artist.replace("葉月 絵理乃", "Hazuki Erino")
+            artist = artist.replace("田中あいみ", "Aimi Tanaka")
             artist = artist.replace("安野希世乃", "Yasuno Kiyono")
             artist = artist.replace("牧野由依", "Makino Yui")
             artist = artist.replace("新居昭乃", "Arai Akino")
@@ -124,6 +104,36 @@ def get_flac_metadata(file_path, type):
             artist = artist.replace("本杰明布拉特", "Benjamin Bratt")
             artist = artist.replace("盖尔·加西亚·伯纳尔", "Gael García Bernal")
             artist = artist.replace("迈克尔・吉亚奇诺", "Michael Giacchino")
+            artist = artist.replace("タップダンスシチー", "Tap Dance City")
+            artist = artist.replace("篠田みなみ", "(CV: Minami Shinoda)")
+            artist = artist.replace("神奈川県立湘南高等学校合唱部", "Kanagawa Prefectural Shonan High School Choir Club")
+            artist = artist.replace("東海大学付属高輪台高等学校吹奏楽部", "Tokai University Takanawadai High School Brass Band Club")
+            artist = artist.replace("甲田雅人", "Masato Koda")
+            artist = artist.replace("加藤慶久", "Yoshihisa Kato")
+            artist = artist.replace("市橋卓也", "Takuya Ichihashi")
+            artist = artist.replace("田山里奈", "Rina Tayama")
+            artist = artist.replace("久保早瑠菜", "Haruna Kubo")
+            artist = artist.replace("牛尾憲輔", "kensuke ushio")
+            artist = artist.replace("レゼ", "Reze")
+            artist = artist.replace("上田麗奈", "Reina Ueda")
+            artist = artist.replace("神前暁", "Satoru Kosaki")
+            artist = artist.replace("梅林太郎", "Taro Umebayashi")
+            artist = artist.replace("ハヤシべトモノリ", "Hayashibe Tomonori")
+            artist = artist.replace("朝倉さや", "Asakura Saya")
+            artist = artist.replace("ヒカル", "Hikaru")
+            artist = artist.replace("梅田修一朗", "Umeda Shuichiro")
+            artist = artist.replace("辻中佳紀", "Tsujinaka Yoshiki")
+            artist = artist.replace("小林千晃", "Kobayashi Chiaki")
+            artist = artist.replace("柳川和樹", "Kazuki Yanagawa")
+            artist = artist.replace("阿知波大輔", "Daisuke Achiwa")
+            artist = artist.replace("笠井雄太", "Yuta Kasai")
+            artist = artist.replace("岩橋星実", "Seima Iwahashi")
+            artist = artist.replace("中恵光城", "Mitsuki Nakae")
+            artist = artist.replace("シズコ(CV.森永千才)", "Shizuko (CV: Morinaga Chitose)")
+            artist = artist.replace("森悠也", "Yuya Mori")
+            artist = artist.replace("小野大輔", "Ono Daisuke")
+            artist = artist.replace("佐咲紗花", "Sayaka Sasaki")
+            artist = artist.replace("増田俊郎", "Toshio Masuda")
 
         print(f"\"{file_name_without_ext} --- {artist if artist else ''}\",")
         # print(f"Title: {title[0] if title else 'Unknown'}")
@@ -132,11 +142,33 @@ def get_flac_metadata(file_path, type):
     except Exception as e:
         print(f"Error reading metadata for {file_path}: {e}")
 
+def get_mp3_metadata(file_path):
+    try:
+        tags = ID3(file_path)
+        artist = tags.get("TPE1", None)
+        title = tags.get("TIT2", None)
+        album = tags.get("TALB", None)
 
-# Ganti dengan path direktori yang sesuai
-folder = "Coco_Ost"
-directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
-directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
+        # Ambil nama file tanpa ekstensi
+        file_name_without_ext = os.path.splitext(
+            os.path.basename(file_path))[0]
+
+        artist = ', '.join(artist)
+
+        bul = True
+        # bul = False
+
+        if bul:
+            artist = artist.replace("鳴潮", "Wuthering Waves")
+
+        print(f"\"{file_name_without_ext} --- {artist if artist else ''}\",")
+
+        # print(f"File: {file_name_without_ext}")
+        # print(f"Title: {title.text[0] if title else 'Unknown'}")
+        # print(f"Author: {author.text[0] if author else 'Unknown'}")
+        # print(f"Album: {album.text[0] if album else 'Unknown'}")
+    except Exception as e:
+        print(f"Error reading metadata for {file_path}: {e}")
 
 # List semua file di direktori
 files = os.listdir(directory_path)

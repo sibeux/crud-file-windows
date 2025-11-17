@@ -4,17 +4,19 @@ import invalid_char as inv_char
 
 # Daftar nama file baru tanpa nomor urut dan waktu
 new_names = [
-"01",
-"02",
-"03",
-"04",
+"Lunar Eclipse",
+"YUKAI",
+"BYAKUGUN",
+"Lunar Eclipse TV Edit",
+"Lunar Eclipse Off Vocal",
+
 ]
 
 # Direktori tempat file berada
 # r"..." digunakan di depan string untuk memastikan Python tidak memperlakukan backslash sebagai karakter escape saat membaca string asli.
 # r untuk raw string, agar backslash tidak dianggap sebagai escape character
 # f untuk f-string, agar bisa menggunakan variabel di dalam string
-folder = "BLADEest"
+folder = "Witch Watch ED2 Theme Tsuki to Watashi no Kakurenbo"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
 # directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
 # directory1 = r"C:\Users\Nasrul Wahabi\Downloads\Video\1. Welcome To The Course!"
@@ -33,11 +35,22 @@ def sanitize_filename(filename):
 
     return filename
 
+# Fungsi untuk mengganti list new_names dengan list index
+def append_index_name(length):
+    global new_names
+    list_index = []
+    for x in range(1,length+1):
+        list_index.append(f"{"{0:0=2d}".format(x)}")
+    new_names = list_index.copy()
+
 # Mendapatkan daftar semua file di direktori yang ditentukan
 files = os.listdir(directory)
 
 # Mengurutkan file berdasarkan nomor urut di nama file
 sorted_files = sorted(files, key=natural_sort_key)
+
+# Isi new_names dengan index
+append_index_name(len(sorted_files))
 
 # Pastikan jumlah file sesuai dengan jumlah nama baru
 if len(sorted_files) != len(new_names):
