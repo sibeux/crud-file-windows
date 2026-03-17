@@ -4,9 +4,10 @@ from mutagen.flac import FLAC
 from mutagen.mp4 import MP4
 
 # Ganti dengan path direktori yang sesuai
-folder = "40-TV Anime “Rent-A-Girlfriend 2nd Season” Original Soundtrack"
+folder = "60-jujutsu-kaisen-ost-20260210-092045"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
-# directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
+directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
+# directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\5-instrumental\59-jujutsu-kaisen-shibuya-incident-ost-31-01-2026\2"
 
 def get_flac_metadata(file_path, type):
     try:
@@ -32,12 +33,19 @@ def get_flac_metadata(file_path, type):
 
         if bul:
             artist = artist.replace("土屋俊輔", "Shunsuke Tsuchiya")
+            artist = artist.replace("谷川瑠璃", "Ruri Tanigawa")
+            artist = artist.replace("根本京里", "Miyari Nemoto")
+            artist = artist.replace("堤博明", "Hiroaki Tsutsumi")
             artist = artist.replace("ヒャダイン", "Hyadain")
+            artist = artist.replace("渡邉峻冶", "wata harikemu")
+            artist = artist.replace("佐々木詩織", "Shiori Sasaki")
             artist = artist.replace("光田康典", "Yasunori Mitsuda")
+            artist = artist.replace("成田旬", "Shun Narita")
             artist = artist.replace("辻 陽", "Yo Tsuji")
             artist = artist.replace("りぶ", "RIB")
             artist = artist.replace("吉澤嘉代子", "Yoshizawa Kayoko")
             artist = artist.replace("林ゆうき", "Yuki Hayashi")
+            artist = artist.replace("新屋 豊", "Yutaka Shinya")
             artist = artist.replace("妹S", "ImoutoS")
             artist = artist.replace("堤 博明", "Hiroaki Tsutsumi")
             artist = artist.replace("神前 暁", "Satoru Kosaki")

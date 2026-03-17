@@ -4,7 +4,7 @@ from mutagen.flac import FLAC
 from mutagen.mp4 import MP4
 
 # Ganti dengan path direktori yang sesuai
-folder = "41-TV Anime Rent-A-Girlfriend 1st Season Original Soundtrack"
+folder = "mina-rei-waves-of-silence20260317-173051"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
 # directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
 
@@ -20,10 +20,17 @@ def get_mp3_metadata(file_path):
         # Ambil nama file tanpa ekstensi
         file_name_without_ext = os.path.splitext(os.path.basename(file_path))[0]
 
-        print(f"File: {file_name_without_ext}")
+        # print(f"File: {file_name_without_ext}")
         # print(f"Title: {title.text[0] if title else 'Unknown'}")
-        print(f"Author: {author.text[0] if author else 'Unknown'}")
+        # print(f"Author: {author.text[0] if author else 'Unknown'}")
         # print(f"Album: {album.text[0] if album else 'Unknown'}")
+        
+        # Ambil nama file tanpa ekstensi
+        file_name_without_ext = os.path.splitext(os.path.basename(file_path))[0]
+        
+        if '"' in title:
+            title = title.replace('\"', '\\"')
+        print(f"\"{file_name_without_ext} --- {title if title else 'Unknown'}\",")
     except Exception as e:
         print(f"Error reading metadata for {file_path}: {e}")
 
