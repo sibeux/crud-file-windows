@@ -4,10 +4,9 @@ from mutagen.flac import FLAC
 from mutagen.mp4 import MP4
 
 # Ganti dengan path direktori yang sesuai
-folder = "60-jujutsu-kaisen-ost-20260210-092045"
+folder = "42-mob-ii-ost20260319-150404"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
-directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
-# directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\5-instrumental\59-jujutsu-kaisen-shibuya-incident-ost-31-01-2026\2"
+# directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
 
 def get_flac_metadata(file_path, type):
     try:
