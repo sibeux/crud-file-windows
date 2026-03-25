@@ -4,7 +4,7 @@ from mutagen.flac import FLAC
 from mutagen.mp4 import MP4
 
 # Ganti dengan path direktori yang sesuai
-folder = "37-sao-ii-ost-vol1"
+folder = "67-toujima-tanzaburou-kamen-rider-ni-naritai-ost-20260325-225301"
 directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
 # directory1 = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
 

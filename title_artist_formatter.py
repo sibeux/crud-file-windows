@@ -4,7 +4,7 @@ from mutagen.flac import FLAC
 from mutagen.mp4 import MP4
 
 # Ganti dengan path direktori yang sesuai
-folder = "42-mob-ii-ost20260319-150404"
+folder = "67-toujima-tanzaburou-kamen-rider-ni-naritai-ost-20260325-225301"
 directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\flac"
 # directory_path = rf"C:\Users\Nasrul Wahabi\Downloads\Music\UPLOAD\{folder}\2"
 
@@ -32,7 +32,10 @@ def get_flac_metadata(file_path, type):
 
         if bul:
             artist = artist.replace("土屋俊輔", "Shunsuke Tsuchiya")
+            artist = artist.replace("時任良治", "Ryouji Tokitou")
+            artist = artist.replace("チバニャン", "ChibaNyan")
             artist = artist.replace("谷川瑠璃", "Ruri Tanigawa")
+            artist = artist.replace("松崎しげる", "Shigeru Matsuzaki")
             artist = artist.replace("根本京里", "Miyari Nemoto")
             artist = artist.replace("堤博明", "Hiroaki Tsutsumi")
             artist = artist.replace("ヒャダイン", "Hyadain")
